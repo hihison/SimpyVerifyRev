@@ -61,7 +61,7 @@ def main():
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '}
 
     try:
-        response = requests.get("https://<Private IP check >/", headers=headers)
+        response = requests.get("https://<Private IP check API URL>/", headers=headers)
         ipinfo = response.json()
     except Exception as e:
         print(f"Error fetching IP info: {e}")
